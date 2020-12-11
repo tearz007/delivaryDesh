@@ -1,0 +1,7 @@
+{
+  "name": "delivaryDesh",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
