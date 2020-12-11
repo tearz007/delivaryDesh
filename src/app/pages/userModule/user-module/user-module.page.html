@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons (click)="dismiss()" slot="start">
+      <ion-button>
+        <ion-icon name="arrow-back-sharp"></ion-icon>Back
+      </ion-button>
+    </ion-buttons>
+    <ion-title>userModule</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<div class="user ion-padding" *ngFor="let item of users; let i = index" >
+  <ion-title><b>   {{'user'}} {{i+1}}</b></ion-title>
+ <br>
+  <ion-label><b>{{'Email :'}}</b> {{item.Email}}</ion-label>
+  <br>
+  <ion-label><b>{{'Name :'}}</b> {{item.Name}}</ion-label>
+  <br>
+  <ion-label><b>{{'Phone number :'}}</b> {{item.PhoneNumber}}</ion-label>
+  <br>
+  <ion-label><b>{{'ID :'}}</b> {{item.id}}</ion-label>
+  <br>
+</div>
+
+</ion-content>

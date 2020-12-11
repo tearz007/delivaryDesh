@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons (click)="dismiss()" slot="start">
+      <ion-button>
+        <ion-icon name="arrow-back-sharp"></ion-icon>Back
+      </ion-button>
+    </ion-buttons>
+    <ion-title>orderModule</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="order ion-padding" *ngFor="let item of orders; let i=index">
+
+    <ion-title><b>   {{'Order'}} {{i+1}}</b></ion-title>
+    <br>
+     <ion-label><b>{{'item Id :'}}</b> {{item.id}}</ion-label>
+     <br>
+     <ion-label><b>{{'Image :'}}</b> {{item.image}}</ion-label>
+     <br>
+     <ion-label><b>{{'Name :'}}</b> {{item.name}}</ion-label>
+     <br>
+     <ion-label><b>{{'Price :'}}</b> {{item.price}}</ion-label>
+     <br>
+     <ion-label><b>{{'Quantity:'}}</b> {{item.quantity}}</ion-label>
+     <br>
+     <ion-label><b>{{'Latitude :'}}</b> {{item.latitude}}</ion-label>
+     <br>
+     <ion-label><b>{{'Longitude :'}}</b> {{item.longitude}}</ion-label>
+     <br>
+
+  </div>
+
+</ion-content>
